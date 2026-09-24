@@ -27,7 +27,7 @@ async function createSingleUser(req, res, next) {
       firstname: req.fields.firstname,
       lastname: req.fields.lastname,
       age: req.fields.age,
-      role: req.fields.role,
+      role: "default",
     });
     res.json(user);
   } catch (error) {
